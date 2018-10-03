@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "export NODE_ENV=dev&&webpack -p --mode development --watch --progress --color",
     "pro": "export NODE_ENV=pro&&webpack -p --mode production --watch --progress --color",
-    "test": "export NODE_ENV=dev&&webpack -p --config spec/webpack.test.conf --mode production --watch --progress --color"
+    "test": "export NODE_ENV=dev&&webpack -p --config spec/webpack.test.conf --mode production --watch --progress --color",
+    "test-karma": "export NODE_ENV=dev&&webpack -p --config karma/webpack.test.conf --mode production --watch --progress --color"
   },
   "author": "yutianjian",
   "license": "ISC",
@@ -23,7 +24,13 @@
     "glob": "^7.1.3",
     "html-webpack-plugin": "^3.2.0",
     "jasmine": "^3.2.0",
+    "jasmine-core": "^3.2.1",
     "jasmine-es6": "^0.4.3",
+    "karma": "^3.0.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-firefox-launcher": "^1.1.0",
+    "karma-jasmine": "^1.1.2",
+    "karma-webpack": "^3.0.5",
     "less": "^3.8.1",
     "less-loader": "^4.1.0",
     "postcss-loader": "^3.0.0",

@@ -66,6 +66,18 @@ toEqual()：相当于==，注意与toBe()的区别。
 #### 额外问题
 * es6转码
 
+### karma
+####安装
+```javascript
+npm install karma --save-dev npm install karma-jasmine karma-chrome-launcher jasmine-core --save-dev
+```
+#### karma-webpack
+* 由于我们的被测试代码是用es6写的，所以还需要对源代码进行转译,使用karma-webpack插件编译并引入源代码
+#### 初始化
+```javascript
+npx karma init
+```
+
 
 
 
